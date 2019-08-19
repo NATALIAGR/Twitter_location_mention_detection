@@ -1,10 +1,3 @@
-# Twitter_incident-mention-detection
-
-
-Author= Natalia Grion
-
-Date= March 2019
-
 # Introduction
 
 These are the main modules I created as part of a project I developed: an early warning system pipeline based on social media channels. I used historical data (csv format) but functions can be inserted into an online twitter stream pipeline.
