@@ -22,7 +22,7 @@ geolocator = Nominatim(format_string=None, view_box=[(54.6077,0.1985),(53.1375,-
                         domain='nominatim.openstreetmap.org', scheme=None, 
                         user_agent='my-application')
 
-def geocode_tweetsYW_area(x):
+def geocode_tweets_area(x):
     """ Apply Geopy. Import Nominatim and set the params for it. Use a time to sleep of 
         2 secs in the loop to avoid limit of 1query/sec
         Input: x: list of column data of addresses to be geolocated.
