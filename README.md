@@ -6,14 +6,14 @@ Author= Natalia Grion
 Date= March 2019
 
 """
+Introduction
+These are the main modules I created as part of a project I developed: an early warning system pipeline based on social media channels. I used historical data (csv format) but functions can be inserted into an online twitter stream pipeline.
+Hope you find it useful. 
 
 
 DATA:
 '---.csv'
- These are the main modules I created to develop an early warning system pipeline based on social media channels from the company interested.
- These modules were created analyzing historical twitter data.  
-
-
+ 
   Modules created: 
 
  a) clean_tweet.py
