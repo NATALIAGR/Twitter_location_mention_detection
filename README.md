@@ -10,30 +10,20 @@ Date= March 2019
 
 DATA:
 '---.csv'
- These are the main functions I created to develop an early warning system pipeline based on social media channels from the company interested.
- These functions were created analyzing historical twitter data.  
-
-SCRIPTS content:
-
-1) Twiter_incident_locationExtraction
-a)This module loads twitter data (csv format) to extract location information in 3 different ways. 
-b)It geocodes locations found and concatenates long-lat for each source into the dataframe. 
-c)Saves the final dataframe for later usage
-d)Computes the level of ocnfidence for each location geocoded according to the consistency of the data.
+ These are the main modules I created to develop an early warning system pipeline based on social media channels from the company interested.
+ These modules were created analyzing historical twitter data.  
+a) Clean twitters to prepare the text for location information detection.
+  To extract location information in 3 different ways:
+b) Find 'street' (lane, avenue) mentions using regex
+c) Find post code mentions using the regex for UK postcode format. This module has an extra function to standirize postcodes: by correcting 'missing space' typo. 
+d) Apply neural network package spaCy. https://spacy.io/usage/spacy-101
+d)It geocodes locations found and concatenates long-lat for each source into the dataframe. 
 
 
-         Modules created and imported in this script: 
+         Modules created: 
 
-        clean_tweet.py
-        find_street_mention.py
-        find_postcode_mention.py
-        find_ner_mention.py
-        geocode_tweet_location.py
-        label_tweets_confidence level.py
-
-
-2) Plot_Coordinates_withLabelling. It loads the final dtaaframe with all location and geocded information
-and plot it into a map of the area with the colors related to the level of confidence
-
-
-
+        a) clean_tweet.py
+        b) find_street_mention.py
+        c) find_postcode_mention.py
+        d) find_ner_mention.py
+        e) geocode_tweet_location.py
