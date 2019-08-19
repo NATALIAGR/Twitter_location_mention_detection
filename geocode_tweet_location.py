@@ -13,7 +13,7 @@ import time
 import pandas as pd
 
 
-# view_box referes to the area of competence of Yorkshire Waters (+ what falls into the square). It was created manually using 
+# view_box referes to the area of competence (+ what falls into the square). It was created manually using 
 # https://boundingbox.klokantech.com/: -2.4602,53.1375,0.1985,54.6077
 # view_box has the form: [Point(22, 180), Point(-22, -180)]
 
